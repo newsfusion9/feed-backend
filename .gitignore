@@ -1,0 +1,9 @@
+node_modules
+.env
+
+.vercel
+
+.idea/
+build/
+
+.git_
