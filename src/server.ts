@@ -16,6 +16,7 @@ app.use(
   cors({
     origin: [
       "https://newsletter-aggregator-sigma.vercel.app",
+      "https://feed-app-six.vercel.app",
       "http://localhost:5173",
       "https://2a4a15e7-330c-475e-b139-c0cbe032ce15-00-ij3gplli45dh.janeway.replit.dev",
     ],
