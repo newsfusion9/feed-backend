@@ -24,10 +24,9 @@ app.use(
   })
 );
 
-app.use(express.limit('5mb'));
 // Middleware to parse JSON bodies
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.urlencoded({limit: '5mb', extended: true }));
+app.use(express.json({limit:'5mb'}));
 
 // mail-parser & node-imap email parser
 // imapEmailParserService();
