@@ -135,7 +135,7 @@ export const fetchEmailDataViaMake = async (req: Request, res: Response) => {
   try {
     const emailData = {
       title: req.body.subject,
-      content: req.body.htmlContent,
+      content: req.body.htmlContent || req.body.text,
     };
     const response = await createArticleService(emailData as IArticle);
 
