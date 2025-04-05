@@ -148,7 +148,8 @@ export const fetchEmailDataViaMake = async (req: Request, res: Response) => {
     sendMessageToAllClients(message);
     res.end();
   } catch (error) {
-    res.status(500).json(error);
+    console.log("Check Error" ,error)
+    res.json(error);
   }
 };
 
