@@ -24,6 +24,7 @@ app.use(
   })
 );
 
+app.use(express.limit('5mb'));
 // Middleware to parse JSON bodies
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
